@@ -20,8 +20,6 @@ body{
     overflow: hidden;
     font-family: Spaced;
     color: #fff;
-}
-section{
     position: absolute;
     top: 0;
     left: 0;
@@ -32,6 +30,7 @@ section{
     background-size: cover;
     animation: animateBg 50s linear infinite;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, max-content) auto;
@@ -64,32 +63,18 @@ section{
     grid-column: 1 / 6;
     grid-row: 3;
     font-size: 30px;
+    animation: fadeIn 5s;
 }
 .welcome{
     grid-column: 1 / 6;
     grid-row: 4;
     font-size: 20px;
+    padding: 1vh;
+    animation: fadeIn 10s;
 }
-
-span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 4px;
-    height: 4px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
-    animation:  animate 3s linear infinite;
-}
-span::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
-    background: linear-gradient(90deg, #fff, transparent);
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes animate {
     0%
@@ -109,6 +94,26 @@ span::before{
 
     }
     
+}
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1)  ;
+    animation:  animate 3s linear infinite;
+}
+span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
 }
 span:nth-child(1){
     top: 0;
@@ -161,7 +166,7 @@ span:nth-child(7){
     top: 300px;
     right: 0px;
     left:initial;
-    animation-delay:1s ;
+    animation-delay:1.2s ;
     animation-duration: 1.75s;
 }
 
