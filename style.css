@@ -20,6 +20,8 @@ body{
     overflow: hidden;
     font-family: Spaced;
     color: #fff;
+}
+section{
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +32,6 @@ body{
     background-size: cover;
     animation: animateBg 50s linear infinite;
 }
-
 .grid-container {
     display: grid;
     grid-template-columns: repeat(4, max-content) auto;
