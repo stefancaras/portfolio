@@ -35,7 +35,7 @@ section{
     width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(4, max-content) auto;
-    grid-template-rows: minmax(50px, 6vh) minmax(200px, 70vh) minmax(60px, 10vh) minmax(20px, 5vh);
+    grid-template-rows: minmax(50px, 6vh) minmax(120px, 70vh) minmax(60px, 6vh) minmax(20px, 5vh);
     text-align: center;
     align-items: center;
 }
