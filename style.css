@@ -37,7 +37,7 @@ section{
     width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(4, min-content) 1fr;
-    grid-template-rows: 1fr 5fr 2fr 1fr 2fr;
+    grid-template-rows: 60px 5fr 2fr 1fr 2fr;
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -87,7 +87,7 @@ section{
     width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(4, min-content) auto;
-    grid-template-rows: minmax(50px, 6vh) minmax(120px, 50vh) minmax(60px, 6vh) minmax(20px, 5vh);
+    grid-template-rows: 60px 5fr 2fr 1fr 2fr;
     text-align: center;
     align-items: center;
     padding: 10px 10px 10px 10px;
@@ -95,7 +95,7 @@ section{
 .grid-container2 > div{
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px white solid;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 30px 20px 30px;
 }
 .home{
     grid-column: 1;
