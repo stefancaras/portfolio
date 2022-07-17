@@ -37,7 +37,7 @@ section{
     width: 100vw;
     height: 100vh;
     grid-template-columns: repeat(4, min-content) auto;
-    grid-template-rows: minmax(50px, 6vh) minmax(120px, 50vh) minmax(60px, 6vh) minmax(20px, 5vh);
+    grid-template-rows: minmax(50px, 6vh) minmax(120px, 50vh) minmax(80px, 10vh) minmax(30px, 10vh);
     text-align: center;
     align-items: center;
     padding: 10px;
@@ -45,7 +45,7 @@ section{
 .grid-container > div{
     /* background-color: rgba(0, 0, 0, 0.5);
     border: 1px white solid; */
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
 }
 .home{
     grid-column: 1;
@@ -71,13 +71,13 @@ section{
 .hello{
     grid-column: 1 / 6;
     grid-row: 3;
-    font-size: 30px;
+    font-size: 40px;
     animation: fadeIn 5s;
 }
 .welcome{
     grid-column: 1 / 6;
     grid-row: 4;
-    font-size: 20px;
+    font-size: 30px;
     padding: 1vh;
     animation: fadeIn 10s;
 }
