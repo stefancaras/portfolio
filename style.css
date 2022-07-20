@@ -73,37 +73,32 @@ a:hover, a:active {
 }
 .grid-container {
     display: grid;
-    width: auto;
-    height: 100vh;
-    grid-template-rows: 1fr 5fr 2fr 1fr 2fr;
+    height: 90vh;
+    grid-template-rows: 5fr 2fr 1fr 2fr;
     text-align: center;
     align-items: center;
     font-family: Spaced;
     color: white;
+    border: 1px white solid;
 }
 .grid-container > div{
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px white solid;
 }
-#links{
-    grid-column: 1;
-    grid-row: 1;
-    width: max-content;
-}
 #ootw{
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
     font-size: 60px;
 }
 #hello{
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     font-size: 40px;
     animation: fadeIn 5s;
 }
 #welcome{
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 3;
     font-size: 30px;
     padding: 1vh;
     animation: fadeIn 10s;
