@@ -39,8 +39,8 @@
     top: 200px;
     right: 300px;
     left:initial;
-    animation-delay: 0.1s;
-    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-duration: 1.6s;
 }
 .stars:nth-child(2){
     top: 0px;
@@ -53,7 +53,7 @@
     top: 150px;
     right: 300px;
     left:initial;
-    animation-delay: 1.2s ;
+    animation-delay: 0s ;
     animation-duration: 2s;
 }
 .stars:nth-child(4){
@@ -61,7 +61,7 @@
     right: 380px;
     left:initial;
     animation-delay: 0.8s;
-    animation-duration: 1.5s;
+    animation-duration: 1.8s;
 }
 .stars:nth-child(5){
     top: 0;
@@ -75,7 +75,7 @@
     right: 580px;
     left:initial;
     animation-delay: 1s;
-    animation-duration: 3s;
+    animation-duration: 2.2s;
 }
 .stars:nth-child(7){
     top: 0px;
