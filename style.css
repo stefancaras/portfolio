@@ -46,20 +46,23 @@ a:hover, a:active {
 }
 .box a {
     color: #000;
+    border-radius: 20px;
 }
 .box a:hover {
     color: white;
     background: linear-gradient(-60.76deg, rgba(0, 0, 255, 0.8), rgba(255, 0, 179, 0.8), rgba(255, 0, 0, 0.8));
-    border-radius: 20px;
 }
 .box div {
     margin-top: 15px;
 }
-.text-center{
+.text-center {
     text-align: center;
 }
-.text-large{
+.text-large {
     font-size: 2rem;
+}
+.sans-serif {
+    font-family: sans-serif;
 }
 .margin {
     margin: 5vh 0;
@@ -68,10 +71,12 @@ a:hover, a:active {
     display: flex;
     flex-wrap: wrap;
 }
-#home {
+#home,
+#contact {
     display: flex;
     flex-direction: column;
     height: 100%;
+    min-height: 15rem;
     justify-content: space-evenly;
 }
 #ootw{
@@ -86,29 +91,17 @@ a:hover, a:active {
     padding-top: 2vh;
     animation: fadeIn 10s;
 }
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    font-family: sans-serif;
-}
-#about > span {
-    max-width: 25rem;
-    padding: 1rem;
-    text-align: justify;
-}
+#about,
 #projects {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 }
-#work, #social{
-    margin: 20vh 0;
-}
-#work > p {
-    margin: 2vh 0;
+#about > span {
+    max-width: 25rem;
+    padding: 1rem;
+    text-align: justify;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
