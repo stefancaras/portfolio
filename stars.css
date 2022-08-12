@@ -70,7 +70,7 @@
 @keyframes animate {
     0%
     {
-        transform: rotate(315deg) translateX(0);
+        transform: rotate(-20deg) translateX(0);
         opacity: 1;
     }
     70%
@@ -80,7 +80,7 @@
     }
     100%
     {
-        transform: rotate(315deg) translateX(-100vh);
+        transform: rotate(-20deg) translateX(-60vh);
         opacity: 0;
     }
 }

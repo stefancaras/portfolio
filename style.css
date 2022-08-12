@@ -11,9 +11,10 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(./img/bg0.jpg);
+    background-image: url(./img/aurora.jpg);
     background-size: cover;
     background-attachment: fixed;
+    background-position: right top;
     font-family: Spaced;
     font-size: 1.4rem;
     color: white;
