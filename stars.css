@@ -40,29 +40,29 @@
     animation-duration: 2s;
 }
 .stars:nth-child(4){
-    top: 0;
-    right: 380px;
+    top: 300px;
+    right: 300px;
     left:initial;
-    animation-delay: 0.8s;
-    animation-duration: 1.8s;
+    animation-delay: 0s;
+    animation-duration: 1.2s;
 }
 .stars:nth-child(5){
     top: 0;
-    right: 530px;
+    right: 380px;
     left:initial;
     animation-delay: 0.4s;
     animation-duration: 1.5s;
 }
 .stars:nth-child(6){
     top: 0;
-    right: 580px;
+    right: 530px;
     left:initial;
     animation-delay: 1s;
     animation-duration: 2.2s;
 }
 .stars:nth-child(7){
     top: 0px;
-    right: 700px;
+    right: 580px;
     left:initial;
     animation-delay: 0.2s ;
     animation-duration: 1.75s;
