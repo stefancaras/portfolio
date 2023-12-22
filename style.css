@@ -20,11 +20,6 @@ a:visited {
   margin: 0.5em;
   text-underline-offset: 5px;
 }
-a:hover,
-a:active {
-  color: blueviolet;
-  background-color: white;
-}
 .d-flex {
   display: flex;
 }
@@ -88,15 +83,6 @@ a:active {
   padding: 1.5em;
   margin: 0;
 }
-.card a:hover {
-  color: white;
-  background: linear-gradient(
-    -60.76deg,
-    rgba(0, 0, 255, 0.8),
-    rgba(255, 0, 179, 0.8),
-    rgba(255, 0, 0, 0.8)
-  );
-}
 .scrolled {
   background-color: #000000b6;
   transition: background-color 1s linear;
@@ -115,6 +101,21 @@ a:active {
   }
   .fs-3 {
     font-size: 1em;
+  }
+}
+@media (hover) {
+  a:hover {
+    color: blueviolet;
+    background-color: white;
+  }
+  .card a:hover {
+    color: white;
+    background: linear-gradient(
+      -60.76deg,
+      rgba(0, 0, 255, 0.8),
+      rgba(255, 0, 179, 0.8),
+      rgba(255, 0, 0, 0.8)
+    );
   }
 }
 @keyframes fade-in {
