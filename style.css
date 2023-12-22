@@ -1,16 +1,23 @@
 body {
-  display: flex;
-  flex-direction: column;
   background: url("./img/aurora.jpg") fixed right top / cover;
   font-family: "Spaced";
   text-align: center;
   color: white;
+  margin: 0;
+}
+section {
+  min-height: 100vh;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a:link,
 a:visited {
   color: white;
-  padding: 20px 30px;
-  display: inline-block;
+  padding: 0.5em;
+  margin: 0.5em;
   text-underline-offset: 5px;
 }
 a:hover,
@@ -18,16 +25,31 @@ a:active {
   color: blueviolet;
   background-color: white;
 }
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-content-evenly {
+  justify-content: space-evenly;
+}
+.justify-content-center {
+  justify-content: center;
+}
 .fixed {
   position: fixed;
 }
-.text-3em {
+.fs-1 {
   font-size: 3em;
 }
-.text-2em {
+.fs-2 {
   font-size: 2em;
 }
-.text-large {
+.fs-3 {
   font-size: 1.5em;
 }
 .fade-in-5s {
@@ -36,8 +58,8 @@ a:active {
 .fade-in-10s {
   animation: fade-in 10s;
 }
-.my-5vh {
-  margin: 5vh 0;
+.my-3 {
+  margin: 1.5em 0;
 }
 .mt-1em {
   margin-top: 1em;
@@ -45,20 +67,26 @@ a:active {
 .ms-2 {
   margin-left: 0.5em;
 }
+.w-100 {
+  width: 100%;
+}
 .img {
-  width: 50vw;
+  width: 80vw;
   max-width: 400px;
 }
 .card {
   background-color: #ffffff80;
   border: solid 1px #fff;
   border-radius: 20px;
-  box-shadow: 10px 10px 30px #000;
-  margin: 30px;
+  box-shadow: 0 0 20px 10px #000;
+  margin: 1.5em;
 }
 .card a {
+  display: inline-block;
   color: #000;
   border-radius: 20px;
+  padding: 1.5em;
+  margin: 0;
 }
 .card a:hover {
   color: white;
@@ -69,42 +97,25 @@ a:active {
     rgba(255, 0, 0, 0.8)
   );
 }
-.nav-list,
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.nav-list li,
-.social li {
-  font-size: 1.4em;
-}
-.social-links {
-  display: flex !important;
-}
-#home,
-#projects,
-#contact {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-#home,
-#contact {
-  justify-content: space-evenly;
-}
-#project-list,
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.scrolled {
+  background-color: #000000b6;
+  transition: background-color 1s linear;
 }
 @font-face {
   font-family: "Spaced";
   src: url("./fonts/Spaced\ OTF.otf") format("opentype"),
     url("./fonts/Spaced\ TTF.ttf") format("truetype");
+}
+@media screen and (max-width: 500px) {
+  .fs-1 {
+    font-size: 2em;
+  }
+  .fs-2 {
+    font-size: 1.5em;
+  }
+  .fs-3 {
+    font-size: 1em;
+  }
 }
 @keyframes fade-in {
   0% {

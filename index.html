@@ -9,21 +9,21 @@
     <link rel="stylesheet" href="stars.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
-    <nav id="navbar" class="fixed">
-      <ul class="nav-list">
-        <li>
+  <body class="d-flex flex-column">
+    <nav id="navbar" class="fixed w-100 mt-1em">
+      <ul class="d-flex flex-wrap">
+        <li class="fs-3">
           <a href="#home">Home</a>
         </li>
-        <li>
+        <li class="fs-3">
           <a href="#projects">Projects</a>
         </li>
-        <li>
+        <li class="fs-3">
           <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
-    <section id="home">
+    <section id="home" class="d-flex flex-column justify-content-evenly">
       <div id="stars">
         <div class="star"></div>
         <div class="star"></div>
@@ -31,15 +31,15 @@
         <div class="star"></div>
         <div class="star"></div>
       </div>
-      <p class="text-3em">Out of this world<br />websites</p>
+      <p class="fs-1">Out of this world<br />websites</p>
       <div>
-        <p class="text-2em fade-in-5s">Hello,<br />my name is Stefan.</p>
-        <p class="text-large fade-in-10s">Welcome to my website.</p>
+        <p class="fs-2 fade-in-5s">Hello,<br />my name is Stefan.</p>
+        <p class="fs-3 fade-in-10s">Welcome to my website.</p>
       </div>
     </section>
-    <section id="projects">
-      <div class="text-2em my-5vh">Projects</div>
-      <div id="project-list">
+    <section id="projects" class="d-flex flex-column">
+      <div class="fs-2 my-3">Projects</div>
+      <div class="d-flex flex-wrap justify-content-center">
         <div class="card">
           <a href="https://stefancaras.github.io/weather_app/" target="_blank">
             <img
@@ -232,15 +232,15 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="d-flex flex-column justify-content-evenly">
       <div>
-        <p class="text-2em">Let's work together...</p>
-        <p class="text-large">How do you take your coffee?</p>
+        <p class="fs-2">Let's work together...</p>
+        <p class="fs-3">How do you take your coffee?</p>
       </div>
-      <ul class="social">
-        <li>
+      <ul class="social d-flex flex-wrap justify-content-center">
+        <li class="fs-3">
           <a
-            class="social-links"
+            class="d-flex"
             href="https://github.com/stefancaras"
             target="_blank"
           >
@@ -259,12 +259,8 @@
             <span class="ms-2">GitHub</span>
           </a>
         </li>
-        <li>
-          <a
-            class="social-links"
-            href="https://twitter.com/a3e6u9"
-            target="_blank"
-          >
+        <li class="fs-3">
+          <a class="d-flex" href="https://twitter.com/a3e6u9" target="_blank">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -280,8 +276,8 @@
             <span class="ms-2">Twitter</span>
           </a>
         </li>
-        <li>
-          <a class="social-links" href="mailto:stefan.caras@protonmail.com">
+        <li class="fs-3">
+          <a class="d-flex" href="mailto:stefan.caras@protonmail.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
