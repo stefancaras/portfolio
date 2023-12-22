@@ -1,25 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   display: flex;
   flex-direction: column;
-  background-image: url(./img/aurora.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right top;
-  font-family: Spaced;
-  font-size: 1.4rem;
+  background: url("./img/aurora.jpg") fixed right top / cover;
+  font-family: "Spaced";
+  text-align: center;
   color: white;
-  padding: 1rem 2rem;
 }
 a:link,
 a:visited {
   color: white;
   padding: 20px 30px;
-  text-align: center;
   display: inline-block;
   text-underline-offset: 5px;
 }
@@ -28,19 +18,49 @@ a:active {
   color: blueviolet;
   background-color: white;
 }
-.box {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 1px rgb(255, 255, 255) solid;
+.fixed {
+  position: fixed;
+}
+.text-3em {
+  font-size: 3em;
+}
+.text-2em {
+  font-size: 2em;
+}
+.text-large {
+  font-size: 1.5em;
+}
+.fade-in-5s {
+  animation: fade-in 5s;
+}
+.fade-in-10s {
+  animation: fade-in 10s;
+}
+.my-5vh {
+  margin: 5vh 0;
+}
+.mt-1em {
+  margin-top: 1em;
+}
+.ms-2 {
+  margin-left: 0.5em;
+}
+.img {
+  width: 50vw;
+  max-width: 400px;
+}
+.card {
+  background-color: #ffffff80;
+  border: solid 1px #fff;
   border-radius: 20px;
   box-shadow: 10px 10px 30px #000;
   margin: 30px;
-  color: #000;
 }
-.box a {
+.card a {
   color: #000;
   border-radius: 20px;
 }
-.box a:hover {
+.card a:hover {
   color: white;
   background: linear-gradient(
     -60.76deg,
@@ -49,25 +69,20 @@ a:active {
     rgba(255, 0, 0, 0.8)
   );
 }
-.box div {
-  margin-top: 15px;
-}
-.text-center {
-  text-align: center;
-}
-.text-large {
-  font-size: 2rem;
-}
-.sans-serif {
-  font-family: sans-serif;
-}
-.margin {
-  margin: 5vh 0;
-}
-#links {
+.nav-list,
+.social {
   display: flex;
   flex-wrap: wrap;
-  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-list li,
+.social li {
+  font-size: 1.4em;
+}
+.social-links {
+  display: flex !important;
 }
 #home,
 #projects,
@@ -80,44 +95,18 @@ a:active {
 #contact {
   justify-content: space-evenly;
 }
-#ootw {
-  font-size: 3rem;
-}
-#hello {
-  font-size: 2rem;
-  animation: fadeIn 5s;
-}
-#welcome {
-  font-size: 1.5rem;
-  padding-top: 2vh;
-  animation: fadeIn 10s;
-}
-#about,
-#project-list {
+#project-list,
+.social {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
-}
-#about > span {
-  max-width: 25rem;
-  padding: 1rem;
-  text-align: justify;
-}
-#coffee {
-  margin-top: 2vh;
 }
 @font-face {
   font-family: "Spaced";
   src: url("./fonts/Spaced\ OTF.otf") format("opentype"),
     url("./fonts/Spaced\ TTF.ttf") format("truetype");
 }
-@media (max-width: 40rem) {
-  body {
-    padding: 0;
-  }
-}
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
   }
