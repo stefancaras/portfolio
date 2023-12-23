@@ -1,12 +1,12 @@
 .star {
   position: absolute;
-  top: 10px;
+  top: 0;
   right: 300px;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: radial-gradient(#fff, #0000);
   border-radius: 50%;
-  animation: star 1.3s linear 1;
+  animation: star 0.1s linear 1;
 }
 .tail {
   position: absolute;
@@ -18,23 +18,16 @@
   left: 50%;
   transform: translate(0, -50%);
 }
-.star:nth-child(2) {
-  top: 50px;
-  animation-duration: 3s;
+@media screen and (max-width: 500px) {
+  .star {
+    right: 100px;
+    width: 4px;
+    height: 4px;
+  }
+  .tail {
+    width: 100px;
+  }
 }
-.star:nth-child(3) {
-  top: 110px;
-  animation-duration: 1s;
-}
-.star:nth-child(4) {
-  top: 150px;
-  animation-duration: 2.6s;
-}
-.star:nth-child(5) {
-  top: 220px;
-  animation-duration: 1.5s;
-}
-
 @keyframes star {
   0% {
     transform: rotate(-20deg) translateX(0);
