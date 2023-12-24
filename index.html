@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="stars.css" />
     <script src="script.js" defer></script>
   </head>
-  <body class="d-flex flex-column">
+  <body>
     <nav id="navbar" class="fixed w-100 mt-3">
       <ul class="d-flex flex-wrap">
         <li class="fs-3">
@@ -26,10 +26,18 @@
     </nav>
     <section id="home" class="d-flex flex-column justify-content-evenly">
       <div id="stars">
-        <div class="star"><div class="tail"></div></div>
-        <div class="star"><div class="tail"></div></div>
-        <div class="star"><div class="tail"></div></div>
-        <div class="star"><div class="tail"></div></div>
+        <div class="haze" style="top: 0; animation-duration: 1.2s">
+          <div class="plasma"><div class="star"></div></div>
+        </div>
+        <div class="haze" style="top: 8vh; animation-duration: 1s">
+          <div class="plasma"><div class="star"></div></div>
+        </div>
+        <div class="haze" style="top: 14vh; animation-duration: 0.8s">
+          <div class="plasma"><div class="star"></div></div>
+        </div>
+        <div class="haze" style="top: 26vh; animation-duration: 1.5s">
+          <div class="plasma"><div class="star"></div></div>
+        </div>
       </div>
       <p class="fs-1">Out of this world<br />websites</p>
       <div>
@@ -37,8 +45,8 @@
         <p class="fs-3 fade-in-10s">Welcome to my website.</p>
       </div>
     </section>
-    <section id="projects" class="d-flex flex-column">
-      <div class="fs-2 mt-5 mb-4">Projects</div>
+    <section id="projects" class="pt-5">
+      <div class="fs-2 mb-4">Projects</div>
       <div class="d-flex flex-wrap justify-content-center">
         <div class="card">
           <a href="https://stefancaras.github.io/weather_app/" target="_blank">
@@ -185,7 +193,7 @@
         <p class="fs-2">Let's work together...</p>
         <p class="fs-3">How do you take your coffee?</p>
       </div>
-      <ul class="social d-flex flex-wrap justify-content-center">
+      <ul class="d-flex flex-wrap justify-content-center">
         <li class="fs-3">
           <a
             class="d-flex"

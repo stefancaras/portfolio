@@ -1,34 +1,37 @@
-.star {
-  position: absolute;
-  top: 0;
-  right: 300px;
-  width: 8px;
-  height: 8px;
-  background: radial-gradient(#fff, #0000);
-  border-radius: 50%;
-  animation: star 0.1s linear 1;
-}
-.tail {
+.star,
+.plasma,
+.haze {
   position: absolute;
   width: 300px;
-  height: 2px;
-  border-radius: 1in 50% 50% 1in;
-  background: linear-gradient(90deg, #fff, #0000);
+  border-radius: 1in 50%50% 1in;
+}
+.star,
+.plasma {
   top: 50%;
-  left: 50%;
-  transform: translate(0, -50%);
+  transform: translate(4px, -50%);
+}
+.star {
+  height: 2px;
+  background: linear-gradient(90deg, #fff, #0000);
+}
+.plasma {
+  height: 10px;
+  background: linear-gradient(90deg, #ffffff24, #0000);
+}
+.haze {
+  right: 8px;
+  height: 16px;
+  background: linear-gradient(90deg, #ffffff12, #0000);
+  animation: falling-star linear infinite;
 }
 @media screen and (max-width: 500px) {
-  .star {
-    right: 100px;
-    width: 4px;
-    height: 4px;
-  }
-  .tail {
-    width: 100px;
+  .star,
+  .plasma,
+  .haze {
+    width: 150px;
   }
 }
-@keyframes star {
+@keyframes falling-star {
   0% {
     transform: rotate(-20deg) translateX(0);
     opacity: 1;

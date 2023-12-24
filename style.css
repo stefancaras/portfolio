@@ -56,11 +56,11 @@ a:visited {
 .mt-3 {
   margin-top: 1rem;
 }
-.mt-5 {
-  margin-top: 3rem;
-}
 .mb-4 {
   margin-bottom: 1.5rem;
+}
+.pt-5 {
+  padding-top: 3rem;
 }
 .ms-2 {
   margin-left: 0.5rem;
