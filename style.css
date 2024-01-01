@@ -1,5 +1,5 @@
 body {
-  background: url("./img/aurora.jpg") fixed right top / cover;
+  background: url("./img/aurora.jpg") fixed right top / cover #000;
   font-family: "Spaced";
   text-align: center;
   color: white;

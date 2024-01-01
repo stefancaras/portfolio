@@ -1,6 +1,4 @@
-const $ = (query) => document.querySelector(query);
-
-// $("#stars").addEventListener("animationend", (e) => {
+// document.querySelector("#stars").addEventListener("animationend", (e) => {
 //   e.target.style.animation = "none";
 //   e.target.offsetHeight; /* trigger reflow */
 //   e.target.style = `top: ${Math.random() * 30}vh;
@@ -9,6 +7,7 @@ const $ = (query) => document.querySelector(query);
 // });
 
 window.addEventListener("scroll", () => {
-  if ($("html").scrollTop > 50) $("#navbar").classList.add("scrolled");
-  else $("#navbar").classList.remove("scrolled");
+  if (document.querySelector("html").scrollTop > 50)
+    document.querySelector("#navbar").classList.add("scrolled");
+  else document.querySelector("#navbar").classList.remove("scrolled");
 });
